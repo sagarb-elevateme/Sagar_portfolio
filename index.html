@@ -16,97 +16,55 @@
 }
 
 *{box-sizing:border-box}
-
 body{
   margin:0;
   font-family:'Poppins',sans-serif;
   color:var(--text);
-  background:linear-gradient(rgba(11,18,32,0.9),rgba(11,18,32,0.95)),
+  background:linear-gradient(rgba(11,18,32,0.92),rgba(11,18,32,0.97)),
              url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop');
   background-size:cover;
   background-attachment:fixed;
 }
 
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
-}
+.container{max-width:1200px;margin:auto;padding:20px}
 
-.hero{
-  text-align:center;
-  padding:60px 20px;
-}
-
+.hero{text-align:center;padding:60px 20px}
 .profile-img{
-  width:140px;
-  height:140px;
-  border-radius:50%;
-  border:4px solid var(--accent);
-  object-fit:cover;
-  margin-bottom:15px;
+  width:150px;height:150px;border-radius:50%;border:4px solid var(--accent);object-fit:cover;margin-bottom:15px;
 }
 
-h1{font-size:2.5rem;margin:10px 0}
-
+h1{font-size:2.6rem;margin:10px 0}
 .tagline{color:var(--muted)}
 
-.links a{
-  margin:0 10px;
-  color:var(--accent);
-  text-decoration:none;
-  font-weight:500;
-}
+.links a{margin:0 10px;color:var(--accent);text-decoration:none;font-weight:500}
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:20px;
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 
 .card{
   background:rgba(17,24,39,0.85);
-  padding:20px;
-  border-radius:16px;
-  backdrop-filter:blur(10px);
-  box-shadow:0 8px 25px rgba(0,0,0,0.4);
+  padding:22px;border-radius:16px;backdrop-filter:blur(10px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
   transition:0.3s;
 }
+.card:hover{transform:translateY(-6px)}
 
-.card:hover{
-  transform:translateY(-5px);
-}
-
-h2{
-  border-bottom:2px solid #1f2937;
-  padding-bottom:10px;
-  margin-bottom:15px;
-}
+h2{border-bottom:2px solid #1f2937;padding-bottom:10px;margin-bottom:15px}
 
 ul{padding-left:18px}
+.metric{color:var(--accent);font-weight:600}
+.section{margin-bottom:30px}
 
-.project{
-  border-left:3px solid var(--accent);
-  padding-left:10px;
-}
-
-footer{
-  text-align:center;
-  padding:30px;
-  color:var(--muted);
-}
-
+footer{text-align:center;padding:30px;color:var(--muted)}
 </style>
 </head>
 
 <body>
 
 <div class="hero">
-  <img src="https://via.placeholder.com/150" alt="profile" class="profile-img">
+  <img src="https://via.placeholder.com/150" class="profile-img">
   <h1>Durga Bhavani Prasad Menda</h1>
   <p class="tagline">Data Scientist | Machine Learning Engineer</p>
   <p class="tagline">Jersey City, NJ • Open to Relocation</p>
-
   <div class="links">
     <a href="mailto:mdbprasad1698@gmail.com">Email</a>
     <a href="https://linkedin.com/in/durga-menda-1b6a99182/" target="_blank">LinkedIn</a>
@@ -116,71 +74,116 @@ footer{
 
 <div class="container">
 
-<div class="grid">
+<div class="section grid">
 
 <div class="card">
-<h2>Profile</h2>
+<h2>Profile Summary</h2>
 <p>
-Data Scientist with 5+ years of experience building predictive models across healthcare and financial analytics. Skilled in ML, NLP, time-series, and end-to-end MLOps pipelines.
+Data Scientist with 5+ years of experience delivering high-impact ML solutions across healthcare and financial analytics. Specialized in building scalable, end-to-end machine learning systems from data ingestion to deployment and monitoring.
+</p>
+<p>
+Strong expertise in predictive modeling (XGBoost, SVM, Random Forest), NLP, and time-series forecasting, combined with advanced MLOps practices using MLflow, DVC, and CI/CD pipelines.
 </p>
 </div>
 
 <div class="card">
-<h2>Skills</h2>
+<h2>Core Strengths</h2>
 <ul>
-<li>Python, SQL, R</li>
-<li>XGBoost, SVM, Random Forest</li>
-<li>MLflow, DVC, GitHub Actions</li>
-<li>PySpark, Kafka, Neo4j</li>
-<li>AWS, Azure, BigQuery</li>
-<li>Tableau, Power BI</li>
+<li>End-to-End ML Lifecycle (Data → Model → Deployment → Monitoring)</li>
+<li>Real-time ML Systems using Kafka & Spark</li>
+<li>Graph-based insights using Neo4j</li>
+<li>Explainable AI (SHAP, LIME)</li>
+<li>Cloud-native ML (AWS, Azure, BigQuery)</li>
+</ul>
+</div>
+
+</div>
+
+<div class="section grid">
+
+<div class="card">
+<h2>Technical Stack</h2>
+<ul>
+<li><b>Languages:</b> Python, SQL, R, Java</li>
+<li><b>ML:</b> XGBoost, SVM, Random Forest, Neural Networks, NLP, Time Series</li>
+<li><b>MLOps:</b> MLflow, DVC, DagsHub, GitHub Actions</li>
+<li><b>Data Engineering:</b> PySpark, Kafka, Hive</li>
+<li><b>Databases:</b> MySQL, Oracle, Redshift, Azure SQL</li>
+<li><b>Monitoring:</b> Grafana</li>
+<li><b>Visualization:</b> Tableau, Power BI</li>
 </ul>
 </div>
 
 <div class="card">
-<h2>Experience</h2>
-<p><b>Data Scientist – Celgene</b></p>
+<h2>Key Impact</h2>
 <ul>
-<li>Improved readmission prediction by 15%</li>
-<li>Built NLP models with 20% accuracy boost</li>
-<li>Real-time pipelines using Kafka & Spark</li>
-</ul>
-
-<p><b>ML Engineer – Wipro</b></p>
-<ul>
-<li>Developed chatbot systems</li>
-<li>Saved ~$300K cost</li>
+<li><span class="metric">15%</span> improvement in patient readmission prediction</li>
+<li><span class="metric">18%</span> increase in medication adherence</li>
+<li><span class="metric">20%</span> improvement in NLP sentiment accuracy</li>
+<li><span class="metric">30%</span> reduction in analysis turnaround time</li>
+<li><span class="metric">22%</span> increase in program participation</li>
 </ul>
 </div>
 
+</div>
+
+<div class="section">
 <div class="card">
-<h2>Project</h2>
-<div class="project">
-<p><b>Fraud Detection System</b></p>
+<h2>Professional Experience</h2>
+
+<h3>Data Scientist – Celgene Corporation (Jun 2023 – Present)</h3>
 <ul>
-<li>XGBoost + LightGBM (AUC 0.95)</li>
-<li>Real-time inference pipeline</li>
-<li>SHAP explainability</li>
+<li>Designed and deployed end-to-end ML pipelines on AWS (S3, SageMaker) improving readmission prediction by <span class="metric">15%</span> and medication adherence by <span class="metric">18%</span></li>
+<li>Implemented MLOps workflows using MLflow, DVC, and GitHub Actions for automated retraining and deployment</li>
+<li>Built NLP and deep learning models improving sentiment accuracy by <span class="metric">20%</span> and boosting patient outcome predictions by <span class="metric">10%</span></li>
+<li>Engineered large-scale EHR pipelines using PySpark and Kafka enabling real-time insights</li>
+<li>Applied graph analytics using Neo4j for patient relationship insights</li>
+<li>Developed dashboards and monitoring systems (Grafana, Tableau, Power BI) reducing analysis time by <span class="metric">30%</span></li>
+</ul>
+
+<h3>Machine Learning Engineer – Wipro (Nov 2018 – Aug 2022)</h3>
+<ul>
+<li>Developed AI-driven chatbot and NLP systems improving user engagement</li>
+<li>Designed scalable architectures saving ~<span class="metric">$300K</span> in operational costs</li>
+<li>Built retrieval-based ML systems improving response relevance</li>
+<li>Collaborated cross-functionally to integrate analytics and monitoring systems</li>
+</ul>
+
+</div>
+</div>
+
+<div class="section">
+<div class="card">
+<h2>Project: Financial Fraud Detection</h2>
+<ul>
+<li>Developed end-to-end fraud detection system using XGBoost & LightGBM achieving <span class="metric">AUC ~0.95</span></li>
+<li>Engineered behavioral & temporal features and handled class imbalance</li>
+<li>Built real-time inference pipeline for fraud scoring</li>
+<li>Integrated SHAP for explainability and model transparency</li>
+<li>Processed over 1M+ transactions</li>
 </ul>
 </div>
 </div>
+
+<div class="section grid">
 
 <div class="card">
 <h2>Education</h2>
-<p>MS Computer Science – Pace University</p>
-<p>BTech – CMR Engineering College</p>
+<p><b>MS Computer Science</b> – Pace University</p>
+<p><b>BTech</b> – CMR Engineering College</p>
 </div>
 
 <div class="card">
 <h2>Certification</h2>
-<p>Generative AI with LLMs – 2025</p>
+<p>Generative AI with Large Language Models – April 2025</p>
 </div>
 
 </div>
+
 </div>
 
 <footer>
-© 2026 Durga Menda | Premium Portfolio
+© 2026 Durga Menda | Recruiter-Level Portfolio
 </footer>
 
 </body>

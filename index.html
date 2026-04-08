@@ -4,142 +4,183 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Durga Bhavani Prasad Menda | Data Scientist</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #0b1220;
-  color: #e2e8f0;
+:root{
+  --bg:#0b1220;
+  --card:#111827;
+  --accent:#38bdf8;
+  --text:#e2e8f0;
+  --muted:#94a3b8;
 }
 
-header {
-  text-align: center;
-  padding: 40px 20px;
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  color:var(--text);
+  background:linear-gradient(rgba(11,18,32,0.9),rgba(11,18,32,0.95)),
+             url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop');
+  background-size:cover;
+  background-attachment:fixed;
 }
 
-h1 { font-size: 2.5rem; }
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
 }
 
-.card {
-  background: #111827;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+.hero{
+  text-align:center;
+  padding:60px 20px;
 }
 
-h2 {
-  border-bottom: 2px solid #1f2937;
-  padding-bottom: 10px;
+.profile-img{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  border:4px solid var(--accent);
+  object-fit:cover;
+  margin-bottom:15px;
 }
 
-a {
-  color: #38bdf8;
-  text-decoration: none;
+h1{font-size:2.5rem;margin:10px 0}
+
+.tagline{color:var(--muted)}
+
+.links a{
+  margin:0 10px;
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:500;
 }
 
-ul { padding-left: 20px; }
-
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #94a3b8;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
 }
+
+.card{
+  background:rgba(17,24,39,0.85);
+  padding:20px;
+  border-radius:16px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 8px 25px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+h2{
+  border-bottom:2px solid #1f2937;
+  padding-bottom:10px;
+  margin-bottom:15px;
+}
+
+ul{padding-left:18px}
+
+.project{
+  border-left:3px solid var(--accent);
+  padding-left:10px;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:var(--muted);
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
+<div class="hero">
+  <img src="https://via.placeholder.com/150" alt="profile" class="profile-img">
   <h1>Durga Bhavani Prasad Menda</h1>
-  <p>Data Scientist | Machine Learning Engineer</p>
-  <p>Jersey City, NJ • Open to Relocation</p>
-  <p>
-    <a href="mailto:mdbprasad1698@gmail.com">Email</a> |
-    <a href="https://linkedin.com/in/durga-menda-1b6a99182/" target="_blank">LinkedIn</a> |
+  <p class="tagline">Data Scientist | Machine Learning Engineer</p>
+  <p class="tagline">Jersey City, NJ • Open to Relocation</p>
+
+  <div class="links">
+    <a href="mailto:mdbprasad1698@gmail.com">Email</a>
+    <a href="https://linkedin.com/in/durga-menda-1b6a99182/" target="_blank">LinkedIn</a>
     <a href="https://github.com/mdbprasad1698-creator" target="_blank">GitHub</a>
-  </p>
-</header>
+  </div>
+</div>
 
 <div class="container">
 
+<div class="grid">
+
 <div class="card">
-<h2>Profile Summary</h2>
+<h2>Profile</h2>
 <p>
-Data Scientist with 5+ years of experience building predictive models across healthcare and financial analytics. Expertise in machine learning, NLP, and time-series forecasting using Python, SQL, and big data tools like PySpark.
-</p>
-<p>
-Experienced in end-to-end ML lifecycle and MLOps using MLflow, DVC, and GitHub. Skilled in explainability (SHAP, LIME), real-time streaming (Kafka), and building dashboards using Tableau and Power BI.
+Data Scientist with 5+ years of experience building predictive models across healthcare and financial analytics. Skilled in ML, NLP, time-series, and end-to-end MLOps pipelines.
 </p>
 </div>
 
 <div class="card">
-<h2>Technical Skills</h2>
+<h2>Skills</h2>
 <ul>
-<li><b>Languages:</b> Python, SQL, R, Java</li>
-<li><b>ML:</b> XGBoost, SVM, Random Forest, NLP, Time Series</li>
-<li><b>MLOps:</b> MLflow, DVC, GitHub Actions</li>
-<li><b>Big Data:</b> PySpark, Kafka, Neo4j</li>
-<li><b>Cloud:</b> AWS, Azure, BigQuery</li>
-<li><b>Visualization:</b> Tableau, Power BI</li>
+<li>Python, SQL, R</li>
+<li>XGBoost, SVM, Random Forest</li>
+<li>MLflow, DVC, GitHub Actions</li>
+<li>PySpark, Kafka, Neo4j</li>
+<li>AWS, Azure, BigQuery</li>
+<li>Tableau, Power BI</li>
 </ul>
 </div>
 
 <div class="card">
-<h2>Work Experience</h2>
-
-<h3>Data Scientist – Celgene Corporation</h3>
-<p>Jun 2023 – Present</p>
+<h2>Experience</h2>
+<p><b>Data Scientist – Celgene</b></p>
 <ul>
-<li>Built ML pipelines on AWS improving readmission prediction by 15%</li>
-<li>Developed NLP models improving sentiment accuracy by 20%</li>
-<li>Processed large-scale EHR data using PySpark & Kafka</li>
-<li>Created dashboards and monitoring systems using Grafana</li>
+<li>Improved readmission prediction by 15%</li>
+<li>Built NLP models with 20% accuracy boost</li>
+<li>Real-time pipelines using Kafka & Spark</li>
 </ul>
 
-<h3>Machine Learning Engineer – Wipro</h3>
-<p>Nov 2018 – Aug 2022</p>
+<p><b>ML Engineer – Wipro</b></p>
 <ul>
-<li>Developed chatbot and NLP-based AI solutions</li>
-<li>Improved user engagement and reduced costs by $300K</li>
-<li>Built retrieval-based systems for knowledge applications</li>
+<li>Developed chatbot systems</li>
+<li>Saved ~$300K cost</li>
 </ul>
-
 </div>
 
 <div class="card">
-<h2>Projects</h2>
-<h3>Financial Fraud Detection</h3>
+<h2>Project</h2>
+<div class="project">
+<p><b>Fraud Detection System</b></p>
 <ul>
-<li>Built fraud detection system with XGBoost & LightGBM (AUC ~0.95)</li>
-<li>Handled imbalance, feature engineering, real-time inference</li>
-<li>Implemented SHAP explainability</li>
+<li>XGBoost + LightGBM (AUC 0.95)</li>
+<li>Real-time inference pipeline</li>
+<li>SHAP explainability</li>
 </ul>
+</div>
 </div>
 
 <div class="card">
 <h2>Education</h2>
-<p><b>MS in Computer Science</b> – Pace University</p>
-<p><b>BTech</b> – CMR Engineering College</p>
+<p>MS Computer Science – Pace University</p>
+<p>BTech – CMR Engineering College</p>
 </div>
 
 <div class="card">
-<h2>Certifications</h2>
-<p>Generative AI with Large Language Models – April 2025</p>
+<h2>Certification</h2>
+<p>Generative AI with LLMs – 2025</p>
 </div>
 
+</div>
 </div>
 
 <footer>
-© 2026 Durga Menda | Portfolio Website
+© 2026 Durga Menda | Premium Portfolio
 </footer>
 
 </body>
